@@ -125,7 +125,7 @@ const CartDropdown = ({
                           className="w-24"
                         >
                           <Thumbnail
-                            thumbnail={item.thumbnail}
+                            thumbnail={item.thumbnail?.replace("http://localhost:9000", "https://6e0283ccf9f4.ngrok-free.app")}
                             images={item.variant?.product?.images}
                             size="square"
                           />

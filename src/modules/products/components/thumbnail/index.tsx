@@ -41,7 +41,7 @@ const Thumbnail: React.FC<ThumbnailProps> = ({
       )}
       data-testid={dataTestid}
     >
-      <ImageOrPlaceholder image={initialImage} size={size} />
+      <ImageOrPlaceholder image={initialImage?.replace("http://localhost:9000", "https://6e0283ccf9f4.ngrok-free.app")} size={size} />
     </Container>
   )
 }
