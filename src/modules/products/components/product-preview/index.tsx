@@ -32,7 +32,7 @@ export default async function ProductPreview({
     <LocalizedClientLink href={`/products/${product.handle}`} className="group">
       <div data-testid="product-wrapper">
         <Thumbnail
-          thumbnail={product.thumbnail}
+          thumbnail={product.thumbnail?.replace("http://localhost:9000", "https://6e0283ccf9f4.ngrok-free.app")}
           images={product.images}
           size="full"
           isFeatured={isFeatured}
